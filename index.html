@@ -1,0 +1,330 @@
+<!doctype html>
+<html>
+
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-                                awesome/4.7.0/css/font-awesome.min.css">
+	
+
+
+		<style>
+                                                
+			* {
+				box-sizing: border-box;
+			}
+
+			body{
+				margin: 0;
+				font-family: tahoma;
+				font-size: 1.1em;
+			}
+
+			.navbar{
+				background-color: #02475e;
+				overflow: hidden;
+			}
+          
+			.navbar a {
+				text-decoration: none;
+				color: white;
+				padding: 10px;
+				float: left;
+				margin:0;
+			}
+
+			.icon{
+				float: right;
+				display:none;
+			}
+
+			.navbar a:hover {
+				text-decoration: underline;
+
+			}
+
+
+			.active {
+				background-color: black;
+				color: white;
+		     }
+                                 @media only screen and (max-width:1100px){
+				.navbar a:not(:first-child) {
+					display:none;
+				}
+
+				.navbar {
+					position: relative;
+				}
+
+				.navbar a.icon {
+					display: block;
+					float:right;
+
+
+					position: absolute;
+					top: 0;
+					right: 0;
+
+								
+				}
+
+
+				div.navbar.clicked a {
+					
+					display: block;
+					float: none;
+
+			}	
+
+
+                          .col-12{
+                         background-image: url("1.jpg");
+	      width:100%;
+	      height:500px;
+                     background-position: center;
+                     background-size: cover;
+                     
+	   }	
+           
+                 	[class*="col"]{
+
+			float:left;
+			padding: 10px;
+		}
+		
+
+
+
+		.col-1 {width: 8.33%;}
+		.col-2 { width: 16.66%; }
+		.col-3 { width: 25%;}
+		.col-4 {width: 33.33%;}
+		.col-5 {width: 41.66%;}
+		.col-6 {width: 50%;}
+		.col-7 {width: 58.33%;}
+		.col-8 {width: 66.66%; }
+		.col-9 {width: 75%;}
+		.col-10 { width: 83.33%; }
+		.col-11 {width: 91.66%;}
+		.col-12 {width: 100%;}
+
+
+
+
+		.row::after {
+			  content: "";
+  			  clear: both;
+  			  display: table;
+		}
+
+
+                      @media only screen and (max-width: 450px){
+
+
+			[class*="col"]{
+
+				width: 100%;
+
+			}
+
+		}
+
+                 
+            .col-3 img{
+      max-width:100%;
+     height:auto;
+} 
+                 .col-2{
+
+	width:100%;
+	margin: auto;
+                position:relative;
+                  
+
+}
+
+
+.fieldcont{
+
+	padding: 10px;
+
+}
+
+
+
+.fieldcont input, .fieldcont textarea{
+
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px;
+}
+
+.fieldcont label{
+	display: block;
+	padding-bottom: 5px;
+	font-size: 14px;
+               width:100%;
+
+}
+   .button{
+   position:absolute;
+   right:50%;
+   top:96.5%;
+     padding:4px;
+   padding-left:20px;
+     padding-right:20px;
+    background-color:green;
+}
+  
+  .col-3 a{
+ text-decoration:none;
+}
+   .col-6{
+  color:#1c1427;
+}
+ .col-3{
+  pdding:100%;
+  color:#1c1427;
+}
+	
+  .fotter1{
+  text-align:center;
+ }
+	</style>
+
+
+	</head>
+
+	<body>
+
+
+		<div class="navbar" id="nav">
+
+                                           <a href="# "class="active"><i class="fa fa-hospital-user">Hospital                                    Patient Registration Form</i></a>
+	                       <a href="#"><i class="fa fa-home">Home</i></a>
+			<a href="javascript:void(0);" class="icon" onclick="handleClick()">
+				<i class="fa fa-bars"></i>
+			</a>
+
+
+		</div>
+
+		<script>
+
+
+			function handleClick(){
+
+				let nav = document.getElementById("nav");
+
+
+				if(nav.className === "navbar"){
+					
+					nav.className += " clicked";
+
+
+				}	
+				else{
+					nav.className = "navbar";
+
+					
+				}
+
+				
+
+			}
+
+		</script>
+
+
+                  <div class="col-12">
+                 </div>
+               <div class="about Registration">
+                      <div class="col-9">
+                                   <h2>About Hospital Patient Registration Form</h2>
+                             <p>Patient registration forms are used to register patients for procedures offered at medical facilities Whether you need to register new patients for your hospital clinic health center or private practice our free Patient Registration Forms will streamline the registration and onboarding process by seamlessly gathering patient information online. Simply customize any of the free templates below to match your medical facility and youll be registering new patients in no time Patients will be able to provide their personal information provide emergency contact numbers write down their medical histories attach files and submit payments all at once. Submissions will be stored safely in your secure JotForm account easy for you and your staff to access from any device
+Customizing your Patient Registration Form isn t brain surgery Using our drag-and drop Form Builder you can operate on your form by adding form fields images and even your logo without any coding JotForm also offers hundreds of app integrations designed to streamline your front desk workflow </p>
+                       </div>
+                     <div class="col-3">
+                         <img src="4.jpg">
+                      </div>
+                </div><br>
+               <div class="col-2">
+
+	<form>
+                      
+		<div class="fieldcont" class="col-2">
+
+			<label>Name</label>
+			<input type="text">
+
+		</div>
+                              <div class="fieldcont" class="col-2">
+
+			<label>Hospitel name</label>
+			<input type="text">
+
+		</div>
+		<div class="fieldcont" class="col-2">
+
+			<label>Email</label>
+			<input type="text">
+
+		</div>
+                                   <div class="fieldcont" class="col-2">
+
+			<label>Password</label>
+			<input type="password">
+
+		</div>
+
+		<div class="fieldcont" class="col-2">
+
+			<label>Message</label>
+			<textarea rows="12" cols=""></textarea>
+                         
+		</div>
+
+		<a href="back.html"class="button">Sumit</a>
+	
+
+	</form>
+
+
+   </div><br>
+          <div class="foter">
+                  <div class="col-6">
+                         <img src="4.jpg"width="100%"height="auto">
+                         <div class="fotter1">
+                              &copy:2021New Hospital Patient Registration Form
+                          </div>
+                  </div>
+                         <div class="col-3">
+                         <h1>Links</h1>
+                        
+                         <a href="#"><i class="fa fa-home">Home</i></a><br>
+                      
+                          </div>
+                          <div class="col-3">
+                               <h1>Flow Us</h1>
+                               
+                                      <a href="http://viver.com/"><i class="fa fa-                                   university">Viver</i></a><br>
+                                        <a href="https://www.instagram.com/mohankarkio/"><i class="fa fa-                      instagram">Inistagram</i></a><br>
+                                    <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-                                  envelope">Gmail</i></a><br>
+                                        <a href="https://www.facebook.com/mohankarki.1234"><i class="fa                            fa-facebook">facebook</i></a><br>
+                                    <a href="https://twitter.com/"><i class="fa fa-                                                         twitter">Twiter</i></a><br>
+                    <a href="https://www.facebook.com/mohankarki.1234"><Messinger</a><br>
+                         
+                           </div>
+        </div>
+     
+
+	</body>
+
+</html>
